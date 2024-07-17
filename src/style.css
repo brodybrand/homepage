@@ -39,6 +39,21 @@ section {
   align-items: center;
 }
 
+.prof-pic-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.prof-pic-container > h1 {
+  position: absolute;
+  bottom: 0.25rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 0.1rem 0.25rem;
+}
+
 .socials > ul {
   display: flex;
   justify-content: center;
