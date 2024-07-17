@@ -20,12 +20,18 @@
   font-style: normal;
 }
 
-h1 {
+h1,
+h2 {
   font-family: "bebasneue", serif;
+}
+
+h2 {
+  font-size: 1.4rem;
 }
 
 p {
   font-family: "roboto", serif;
+  font-size: 0.9rem;
 }
 
 /*  temp pic sizing */
@@ -38,12 +44,9 @@ p {
 .profile-pic,
 .contact-pic,
 .project-screenshot {
-  width: 300px;
+  max-width: 300px;
 }
 
-.project-screenshot {
-  width: 150px;
-}
 /* end temp pic sizing */
 
 main {
@@ -76,7 +79,7 @@ section {
 .prof-pic-container > h1 {
   position: absolute;
   top: 0.5rem;
-  left: 2.5rem;
+  left: 3.5rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
@@ -104,4 +107,44 @@ section {
 .profile-pic {
   border-radius: 0.25rem;
   box-shadow: 1px 1px 10px 2px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  border: grey 1px solid;
+}
+
+.my-work > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.project {
+  max-width: 300px;
+}
+
+.project-name {
+  padding-left: 1rem;
+}
+
+.project-details {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: 0.5fr 2.5fr;
+
+  padding: 0.5rem;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 0 1rem 0 1rem;
+}
+
+.project-description {
+  grid-column: 1 / 3;
 }
