@@ -4,6 +4,29 @@
   text-decoration: none;
   list-style-type: none;
 }
+@font-face {
+  font-family: "roboto";
+  src: url("./assets/fonts/roboto-regular-webfont.woff2") format("woff2"),
+    url("./assets/fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "bebasneue";
+  src: url("./assets/fonts/bebasneue-regular-webfont.woff2") format("woff2"),
+    url("./assets/fonts/bebasneue-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "bebasneue", serif;
+}
+
+p {
+  font-family: "roboto", serif;
+}
 
 /*  temp pic sizing */
 .social-link,
@@ -53,12 +76,19 @@ section {
 .prof-pic-container > h1 {
   position: absolute;
   top: 0.5rem;
-  right: 0.5rem;
+  left: 2.5rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: 0.1rem 0.25rem;
   border-radius: 0.25rem;
+}
+
+.about-me > h1,
+.about-me > p,
+.about-me > .socials {
+  align-self: end;
+  text-align: end;
 }
 
 .socials > ul {
