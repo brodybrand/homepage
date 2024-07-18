@@ -26,13 +26,18 @@ h2 {
   font-family: "bebasneue", serif;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 h2 {
   font-size: 1.4rem;
 }
 
 p {
   font-family: "roboto", serif;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 /*  temp pic sizing */
@@ -68,7 +73,7 @@ section {
 .about-me {
   padding: 1.5rem;
   background: linear-gradient(
-    22deg,
+    330deg,
     transparent 0,
     transparent 450px,
     #7badd3 0,
@@ -98,10 +103,12 @@ section {
 .text-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
 }
 
 .text-wrapper img {
   max-width: 1.25em;
+  background-color: white;
 }
 
 .text-wrapper p {
@@ -114,6 +121,10 @@ section {
 .about-me h1 {
   align-self: end;
   text-align: start;
+}
+
+.about-me .socials {
+  align-self: end;
 }
 
 .socials > ul {
@@ -133,7 +144,7 @@ section {
 }
 
 .my-work {
-  padding-top: 3rem;
+  margin-top: 3rem;
 }
 
 .project {
@@ -181,8 +192,8 @@ section {
 }
 
 .contact {
+  width: 100%;
   margin-top: 3rem;
-  margin-bottom: 0;
 
   flex-direction: row;
   flex-wrap: wrap;
@@ -250,5 +261,78 @@ section {
   max-width: 100%;
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 800px) {
+  .about-me {
+    flex-direction: row;
+    margin: 2rem;
+  }
+
+  .about-me h1 {
+    font-size: 1.6rem;
+  }
+
+  .prof-pic-container h1 {
+    transform: translateX(27rem);
+    font-size: 3.5rem;
+    text-decoration: none;
+  }
+
+  .text-wrapper {
+    z-index: 1;
+    margin-top: 6rem;
+    margin-left: -8rem;
+    background-color: white;
+    border: black 1px solid;
+    height: 200px;
+  }
+  .contact {
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-card {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: start;
+  }
+
+  .contact-card > p,
+  .address > p {
+    text-align: start;
+  }
+
+  .contact-card p {
+    font-size: 1.2rem;
+  }
+
+  .contact-pic-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+  }
+
+  .contact-pic-wrapper {
+    max-width: 250px;
+    position: relative;
+    margin-right: 1.5rem;
+  }
+
+  .contact-pic-wrapper > .socials {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-pic-wrapper {
+    max-width: 600 px;
+    position: relative;
+    margin-right: 1.5rem;
+  }
 }

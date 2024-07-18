@@ -373,11 +373,30 @@
               </li>
             </ul>
           </div>
-          <img
+          <picture>
+            <source
+              media="(min-width: 800px) and (max-width: 1200px)"
+              srcset="<%=require('./assets/contact-med.png')%>"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="<%=require('./assets/contact-pic.JPG')%>"
+            />
+            <source
+              media="(max-width 800px)"
+              srcset="<%=require('./assets/contact-pic.JPG')%>"
+            />
+            <img
+              src="<%=require('./assets/contact-pic.JPG')%>"
+              alt="me, in the desert"
+              class="contact-pic"
+            />
+          </picture>
+          <!-- <img
             src="<%=require('./assets/contact-pic.JPG')%>"
             alt="me, in the desert"
             class="contact-pic"
-          />
+          /> -->
         </div>
       </section>
     </main>
